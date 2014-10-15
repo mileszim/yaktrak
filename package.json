@@ -1,0 +1,23 @@
+{
+  "name": "yaktrak",
+  "version": "0.0.1",
+  "description": "Stream Yik Yak in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mileszim/yaktrak.git"
+  },
+  "keywords": [
+    "yikyak",
+    "stream"
+  ],
+  "author": "Miles Zimmerman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mileszim/yaktrak/issues"
+  },
+  "homepage": "https://github.com/mileszim/yaktrak"
+}
