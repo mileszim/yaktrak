@@ -1,4 +1,4 @@
 //
 // YakTrak JS
 //
-//= require boostrap
+//= require bootstrap
