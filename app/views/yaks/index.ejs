@@ -1,15 +1,62 @@
-<div class="row">
-  <div class="col-md-6">
-    <% yaks.forEach(function(yak) { %>
+<% yaks.forEach(function(yak) { %>
+  <div class="row">
+    <div class="col-md-6">
+    
+      <p>
+        <span class="text-muted"><i class="fa fa-clock-o"></i> <%- yak.timestamp %> </span>
+        <span class="label label-warning"><i class="fa fa-graduation-cap"></i> <%= yak.school %></span>
+      </p>
       <blockquote>
         <p><%- yak.content %></p>
+        <% if (yak.handle) { %>
+          <footer><%= yak.handle %></footer>
+        <% } %>
       </blockquote>
-      <p><small><span class="glyphicon glyphicon-clock"></span> <%- yak.timestamp %></small></p>
-    <% }); %>
-  </div>
-  
-  <div class="col-md-6">
+      <div class="row">
+        <div class="col-sm-3">
+          <h3>
+            <% if (yak.likes < 0) { %>
+            <span class="label label-danger">
+              <i class="fa fa-thumbs-down"></i>
+            <% } else { %>
+            <span class="label label-primary">
+              <i class="fa fa-thumbs-up"></i>
+            <% } %>
+              <%= yak.likes %>
+            </span>
+          </h3>
+        </div>
+        <div class="col-sm-9">
+          <% if (yak.num_comments > 0) { %>
+            <h4>Comments</h4>
+            <ol>
+              <% yak.comments.forEach(function(comment) { %>
+                <li>
+                  <% if (comment.likes < 0) { %>
+                  <span class="label label-danger">
+                    <i class="fa fa-thumbs-down"></i> 
+                  <% } else { %>
+                  <span class="label label-primary">
+                    <i class="fa fa-thumbs-up"></i> 
+                  <% } %> 
+                    <%= comment.likes %>
+                  </span>
+                  <%= comment.content %>
+                </li>
+              <% }); %>
+            </ol>
+          <% } %>
+        </div>
+      </div>
     
+    </div>
+  
+    <div class="col-md-6">
+      <div class="well well-sm">
+        <p><span class="label label-default"><%= yak.latitude %>, <%= yak.longitude %></span> <span class="pull-right"><%= yak.address %></span></p>
+        <img class="img-responsive" src="https://maps.googleapis.com/maps/api/staticmap?center=<%= yak.latitude %>,<%= yak.longitude %>&zoom=18&size=600x400&markers=color:red|<%= yak.latitude %>,<%= yak.longitude %>&maptype=hybrid">
+      </div>
+    </div>
   </div>
-</div>
-<br/>
+  <br/><br/><br/>
+<% }); %>
