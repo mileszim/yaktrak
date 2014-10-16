@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/mileszim/yaktrak/issues"
   },
-  "homepage": "https://github.com/mileszim/yaktrak"
+  "homepage": "https://github.com/mileszim/yaktrak",
+  "dependencies": {
+    "async": "^0.9.0",
+    "lodash": "^2.4.1",
+    "node-geocoder": "^2.9.1",
+    "unirest": "^0.2.7"
+  }
 }
