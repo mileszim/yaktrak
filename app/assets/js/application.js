@@ -1,0 +1,4 @@
+//
+// YakTrak JS
+//
+//= require boostrap
