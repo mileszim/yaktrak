@@ -4,7 +4,7 @@ module.exports = {
 	db: 'mongodb://localhost/yaktrak',
 	
 	// School to fetch yaks from
-	school: 'Chapman University',
+	school: 'University of Florida',
 	
 	// Geocoding API key
 	geocode_key: 'AIzaSyAC02Zv19RtxSucTYfvROHpxewxEeuwSXs'

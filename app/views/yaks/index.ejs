@@ -1,3 +1,15 @@
 <div class="row">
-  <h1>Index!</h1>
+  <div class="col-md-6">
+    <% yaks.forEach(function(yak) { %>
+      <blockquote>
+        <p><%- yak.content %></p>
+      </blockquote>
+      <p><small><span class="glyphicon glyphicon-clock"></span> <%- yak.timestamp %></small></p>
+    <% }); %>
+  </div>
+  
+  <div class="col-md-6">
+    
+  </div>
 </div>
+<br/>

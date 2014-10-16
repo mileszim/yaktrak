@@ -29,6 +29,7 @@
     "lodash": "^2.4.1",
     "mongoose": "^3.8.17",
     "node-geocoder": "^2.9.1",
+    "node-sass": "^0.9.6",
     "unirest": "^0.2.7"
   }
 }
