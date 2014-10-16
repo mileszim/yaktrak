@@ -1,1 +1,2 @@
-console.log('Yakkin');
+// Init
+var yaktrak = require('./lib');
