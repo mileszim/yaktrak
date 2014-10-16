@@ -22,6 +22,8 @@
   "homepage": "https://github.com/mileszim/yaktrak",
   "dependencies": {
     "async": "^0.9.0",
+    "connect-assets": "^4.3.3",
+    "express": "^4.9.7",
     "lodash": "^2.4.1",
     "mongoose": "^3.8.17",
     "node-geocoder": "^2.9.1",
