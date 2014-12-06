@@ -7,6 +7,6 @@ module.exports = {
 	school: 'Chapman University',
 	
 	// Geocoding API key
-	geocode_key: 'AIzaSyAC02Zv19RtxSucTYfvROHpxewxEeuwSXs'
+	geocode_key: 'your_key'
 	
 };
